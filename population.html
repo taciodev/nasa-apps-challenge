@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +28,7 @@
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="sidebar-brand brand-logo" href="index.html"><img src="logo.png" alt="logo" /></a>
         <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
@@ -336,158 +337,13 @@ Population Increase</span>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-12 grid-margin stretch-card">
-            </div>
-          </div>
 
           <div class="row">
             <div class="col-md-4 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Carbon Dioxide Emission Levels</h4>
-       <!-- Styles -->
-<style>
-#chartdivv {
-  width: 100%;
-  height: 200px;
-}
-</style>
-
-<!-- Resources -->
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
-<!-- Chart code -->
-<script>
-am5.ready(function() {
-
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdivv");
-
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
-
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-var chart = root.container.children.push(
-  am5percent.PieChart.new(root, {
-    startAngle: 160, endAngle: 380
-  })
-);
-
-// Create series
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-
-var series0 = chart.series.push(
-  am5percent.PieSeries.new(root, {
-    valueField: "litres",
-    categoryField: "country",
-    startAngle: 160,
-    endAngle: 380,
-    radius: am5.percent(70),
-    innerRadius: am5.percent(65)
-  })
-);
-
-var colorSet = am5.ColorSet.new(root, {
-  colors: [series0.get("colors").getIndex(0)],
-  passOptions: {
-    lightness: -0.05,
-    hue: 0
-  }
-});
-
-series0.set("colors", colorSet);
-
-series0.ticks.template.set("forceHidden", true);
-series0.labels.template.set("forceHidden", true);
-
-var series1 = chart.series.push(
-  am5percent.PieSeries.new(root, {
-    startAngle: 160,
-    endAngle: 380,
-    valueField: "bottles",
-    innerRadius: am5.percent(80),
-    categoryField: "country"
-  })
-);
-
-series1.ticks.template.set("forceHidden", true);
-series1.labels.template.set("forceHidden", true);
-
-var label = chart.seriesContainer.children.push(
-  am5.Label.new(root, {
-    textAlign: "center",
-    centerY: am5.p100,
-    centerX: am5.p50,
-    text: "[fontSize:18px]total[/]:\n[bold fontSize:30px]415mg/L[/]"
-  })
-);
-
-var data = [
-  {
-    country: "United States",
-    litres: 501.9,
-    bottles: 1500
-  },
-  {
-    country: "China",
-    litres: 301.9,
-    bottles: 990
-  },
-  {
-    country: "Europe",
-    litres: 201.1,
-    bottles: 785
-  },
-  {
-    country: "Germany",
-    litres: 165.8,
-    bottles: 255
-  },
-  {
-    country: "Australia",
-    litres: 139.9,
-    bottles: 452
-  },
-  {
-    country: "Austria",
-    litres: 128.3,
-    bottles: 332
-  },
-  {
-    country: "UK",
-    litres: 99,
-    bottles: 150
-  },
-  {
-    country: "Belgium",
-    litres: 60,
-    bottles: 178
-  },
-  {
-    country: "The Netherlands",
-    litres: 50,
-    bottles: 50
-  }
-];
-
-// Set data
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-series0.data.setAll(data);
-series1.data.setAll(data);
-
-}); // end am5.ready()
-</script>
-
-<!-- HTML -->
-<div id="chartdivv"></div>
+                  
                   <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
                       <h6 class="mb-1">China</h6>
@@ -512,104 +368,171 @@ series1.data.setAll(data);
             <div class="col-md-8 grid-margin stretch-card">
               <div class="card">
 
-                <script src="test.js"></script>
-                <div>
-                  <!-- Styles -->
-                  <style>
-                    body {
-                      background-color: #cfc970;
-                      color: #fff;
-                    }
+                                     <html>
+<head>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-map.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+  <script src="https://cdn.anychart.com/geodata/latest/custom/world/world.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
 
-                    #chartdiv {
-                      width: 100%;
-                      height: 500px;
-                      max-width: 100%;
-                      background-color: #030303;
-                    }
-                  </style>
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+</style>
+</head>
+<body>
+  
+  <div id="container" height="400"></div>
+  
 
-                  <!-- Resources -->
-                  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+  <script>
 
-                  <!-- Chart code -->
-                  <script>
-                    am4core.ready(function () {
+    anychart.onDocumentReady(function () {
+      // The data used in this sample can be obtained from the CDN
+      // https://cdn.anychart.com/samples/maps-general-features/world-choropleth-map/data.json
+      anychart.data.loadJsonFile(
+        'https://cdn.anychart.com/samples/maps-general-features/world-choropleth-map/data.json',
+        function (data) {
+          var map = anychart.map();
 
-                      // Themes begin
-                      am4core.useTheme(am4themes_dark);
-                      // Themes end
+          map
+            .credits()
+            .enabled(true)
+            .url(
+              'https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density'
+            )
+            .logoSrc('https://en.wikipedia.org/static/favicon/wikipedia.ico')
+            .text(
+              'Data source: https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density'
+            );
 
-                      var chart = am4core.create("chartdiv", am4maps.MapChart);
+          map
+            .title()
+            .enabled(true)
+            .useHtml(true)
+            .padding([10, 0, 10, 0])
+            .text(
+              'Population Density (people per km²)<br/>' +
+              '<span  style="color:#929292; font-size: 12px;">(Data source: IBGE)</span>'
+            );
 
-                      // Set map definition
-                      chart.geodata = am4geodata_worldLow;
+          map.geoData('anychart.maps.world');
+          map.interactivity().selectionMode('none');
+          map.padding(0);
 
-                      // Set projection
-                      chart.projection = new am4maps.projections.Orthographic();
-                      chart.panBehavior = "rotateLongLat";
-                      chart.deltaLatitude = -20;
-                      chart.padding(20, 20, 20, 20);
+          var dataSet = anychart.data.set(data);
+          var densityData = dataSet.mapAs({ value: 'density' });
+          var series = map.choropleth(densityData);
 
-                      // limits vertical rotation
-                      chart.adapter.add("deltaLatitude", function (delatLatitude) {
-                        return am4core.math.fitToRange(delatLatitude, -90, 90);
-                      })
+          series.labels(false);
 
-                      // Create map polygon series
-                      var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+          series
+            .hovered()
+            .fill('#f48fb1')
+            .stroke(anychart.color.darken('#f48fb1'));
 
-                      // Make map load polygon (like country names) data from GeoJSON
-                      polygonSeries.useGeodata = true;
+          series
+            .selected()
+            .fill('#c2185b')
+            .stroke(anychart.color.darken('#c2185b'));
 
-                      // Configure series
-                      var polygonTemplate = polygonSeries.mapPolygons.template;
-                      polygonTemplate.tooltipText = "{name}";
-                      polygonTemplate.fill = am4core.color("#47c78a");
-                      polygonTemplate.stroke = am4core.color("#454a58");
-                      polygonTemplate.strokeWidth = 0.5;
+          series
+            .tooltip()
+            .useHtml(true)
+            .format(function () {
+              return (
+                '<span style="color: #d9d9d9">Density</span>: ' +
+                parseFloat(this.value).toLocaleString() +
+                ' pop./km² <br/>' +
+                '<span style="color: #d9d9d9">Population</span>: ' +
+                parseInt(this.getData('population')).toLocaleString() +
+                '<br/>' +
+                '<span style="color: #d9d9d9">Area</span>: ' +
+                parseInt(this.getData('area')).toLocaleString() +
+                ' km²'
+              );
+            });
 
-                      var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
-                      graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
-                      graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
-                      graticuleSeries.fitExtent = false;
+          var scale = anychart.scales.ordinalColor([
+            { less: 10 },
+            { from: 10, to: 30 },
+            { from: 30, to: 50 },
+            { from: 50, to: 100 },
+            { from: 100, to: 200 },
+            { from: 200, to: 300 },
+            { from: 300, to: 500 },
+            { from: 500, to: 1000 },
+            { greater: 1000 }
+          ]);
+          scale.colors([
+            '#81d4fa',
+            '#4fc3f7',
+            '#29b6f6',
+            '#039be5',
+            '#0288d1',
+            '#0277bd',
+            '#01579b',
+            '#014377',
+            '#000000'
+          ]);
 
+          var colorRange = map.colorRange();
+          colorRange.enabled(true).padding([0, 0, 20, 0]);
+          colorRange
+            .ticks()
+            .enabled(true)
+            .stroke('3 #ffffff')
+            .position('center')
+            .length(7);
+          colorRange.colorLineSize(5);
+          colorRange.marker().size(7);
+          colorRange
+            .labels()
+            .fontSize(11)
+            .padding(3, 0, 0, 0)
+            .format(function () {
+              var range = this.colorRange;
+              var name;
+              if (isFinite(range.start + range.end)) {
+                name = range.start + ' - ' + range.end;
+              } else if (isFinite(range.start)) {
+                name = 'More than ' + range.start;
+              } else {
+                name = 'Less than ' + range.end;
+              }
+              return name;
+            });
 
-                      chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
-                      chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+          series.colorScale(scale);
 
-                      // Create hover state and set alternative fill color
-                      var hs = polygonTemplate.states.create("hover");
-                      hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
+          // create zoom controls
+          var zoomController = anychart.ui.zoom();
+          zoomController.render(map);
 
-                      let animation;
-                      setTimeout(function () {
-                        animation = chart.animate({property: "deltaLongitude", to: 100000}, 20000000);
-                      }, 3000)
-
-                      chart.seriesContainer.events.on("down", function () {
-                        if (animation) {
-                          animation.stop();
-                        }
-                      })
-
-                    }); // end am4core.ready()
-                  </script>
-
-                  <!-- HTML -->
-                  <div id="chartdiv"></div>
-                </div>
-
-
-
-
-
-
-
-
+          // set container id for the chart
+          map.container('container');
+          // initiate chart drawing
+          map.draw();
+        }
+      );
+    });
+  
+</script>
+</body>
+</html>
+                
 
               </div>
             </div>
@@ -704,101 +627,7 @@ series1.data.setAll(data);
               </div>
             </div>
           </div> -->
-          <div class="row">
-              <h2 class="text-muted font-weight-normal">Potential Growth of Atmospheric  CO2 Contamination</h2>
-              <div class="col-12 grid-margin stretch-card">
-              </div>
-            </div>
-          <div class="row">
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                       
-                      <div class="col-9">
-                       
-                        <div class="d-flex align-items-center align-self-start">
-                          
-                          <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="text-muted font-weight-normal">Last 12 months</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                   
-                      <div class="col-9">
-                       
-                        <div class="d-flex align-items-center align-self-start">
-                          
-                          <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="text-muted font-weight-normal">Last 6 months</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">400mg/L</h3>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="icon icon-box-danger">
-                          <span class="mdi mdi-arrow-bottom-left icon-item"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="text-muted font-weight-normal">Last 3 months</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="text-muted font-weight-normal">Last month</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           <div class="row">
             <div class="col-sm-4 grid-margin">
               <div class="card">
@@ -893,7 +722,7 @@ series1.data.setAll(data);
           [7, 15, 19],
           [8, 25, 21],
           [9, 34, 23],
-          [10, 50, 27]
+          [11.2, 50, 27]
         ]);
 
         var options = {
@@ -943,76 +772,7 @@ series1.data.setAll(data);
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Relationship Between CO2 and World Population Growth</h4>
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="table-responsive">
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-us"></i>
-                              </td>
-                              <td>USA</td>
-                              <td class="text-right"> 332.915.000 </td>
-                              <td class="text-right font-weight-medium"> 56.35% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-de"></i>
-                              </td>
-                              <td>Germany</td>
-                              <td class="text-right"> 83.900.000 </td>
-                              <td class="text-right font-weight-medium"> 33.25% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-au"></i>
-                              </td>
-                              <td>Australia</td>
-                              <td class="text-right"> 25.788.000 </td>
-                              <td class="text-right font-weight-medium"> 15.45% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-gb"></i>
-                              </td>
-                              <td>United Kingdom</td>
-                              <td class="text-right"> 55.980.000 </td>
-                              <td class="text-right font-weight-medium"> 25.00% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-ro"></i>
-                              </td>
-                              <td>Romania</td>
-                              <td class="text-right"> 19.128.000 </td>
-                              <td class="text-right font-weight-medium"> 10.25% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-br"></i>
-                              </td>
-                              <td>Brasil</td>
-                              <td class="text-right"> 213.993.000 </td>
-                              <td class="text-right font-weight-medium"> 15.00% </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="col-md-7">
-                      <div id="audience-map" class="vector-map"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
