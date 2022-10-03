@@ -1,620 +1,726 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Oxe Resource</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jvectormap/jquery-jvectormap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+  </head>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Oxe Resource</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
-  <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
-  <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <!-- endinject -->
-  <!-- Layout styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- End layout styles -->
-  <link rel="shortcut icon" href="assets/images/favicon.png" />
-</head>
-
-<body>
-  <div class="container-scroller">
-    <!-- partial:partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
-      <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" href="index.html"><img src="logo.png" alt="logo" /></a>
-        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
-            alt="logo" /></a>
-      </div>
-      <ul class="nav">
-        <li class="nav-item profile">
-          <div class="profile-desc">
-            <div class="profile-pic">
-              <div class="count-indicator">
-                <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
-                <span class="count bg-success"></span>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <a class="sidebar-brand brand-logo" href="index.html"
+            ><img src="logo.png" alt="logo"
+          /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/logo-mini.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img
+                    class="img-xs rounded-circle"
+                    src="assets/images/faces/face15.jpg"
+                    alt=""
+                  />
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <span>Gold Member</span>
+                </div>
               </div>
-              <div class="profile-name">
-                <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                <span>Gold Member</span>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"
+                ><i class="mdi mdi-dots-vertical"></i
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
+                aria-labelledby="profile-dropdown"
+              >
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">
+                      Account settings
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">
+                      Change Password
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content"></div>
+                </a>
               </div>
             </div>
-            <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-            <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
-              aria-labelledby="profile-dropdown">
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-settings text-primary"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-onepassword  text-info"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-calendar-today text-success"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                </div>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item nav-category">
-          <span class="nav-link">Navigation</span>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="index.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-speedometer"></i>
-            </span>
-            <span class="menu-title">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="worldwild.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-table-large"></i>
-            </span>
-            <span class="menu-title">General Data</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="carbon.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-chart-bar"></i>
-            </span>
-            <span class="menu-title">CO2 Increase</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="population.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-contacts"></i>
-            </span>
-            <span class="menu-title">
-Population Increase</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link"
-            href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-file-document-box"></i>
-            </span>
-            <span class="menu-title">Documentation</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_navbar.html -->
-      <nav class="navbar p-0 fixed-top d-flex flex-row">
-        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
-              alt="logo" /></a>
-        </div>
-        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-menu"></span>
-          </button>
-          <ul class="navbar-nav w-100">
-            <li class="nav-item w-100">
-              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                <input type="text" class="form-control" placeholder="Search products">
-              </form>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-none d-lg-block">
-
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="createbuttonDropdown">
-                <h6 class="p-3 mb-0">Projects</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-file-outline text-primary"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Software Development</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-web text-info"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">UI Development</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-layers text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Software Testing</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">See all projects</p>
-              </div>
-            </li>
-            <li class="nav-item nav-settings d-none d-lg-block">
-              <a class="nav-link" href="#">
-                <i class="mdi mdi-view-grid"></i>
-              </a>
-            </li>
-            <li class="nav-item dropdown border-left">
-              <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown"
-                aria-expanded="false">
-                <i class="mdi mdi-email"></i>
-                <span class="count bg-success"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="messageDropdown">
-                <h6 class="p-3 mb-0">Messages</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
-                    <p class="text-muted mb-0"> 1 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
-                    <p class="text-muted mb-0"> 15 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
-                    <p class="text-muted mb-0"> 18 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">4 new messages</p>
-              </div>
-            </li>
-            <li class="nav-item dropdown border-left">
-              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
-                data-toggle="dropdown">
-                <i class="mdi mdi-bell"></i>
-                <span class="count bg-danger"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="notificationDropdown">
-                <h6 class="p-3 mb-0">Notifications</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Event today</p>
-                    <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Settings</p>
-                    <p class="text-muted ellipsis mb-0"> Update dashboard </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-link-variant text-warning"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Launch Admin</p>
-                    <p class="text-muted ellipsis mb-0"> New admin wow! </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">See all notifications</p>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                <div class="navbar-profile">
-                 
-                
-                  <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-                </div>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="profileDropdown">
-                <h6 class="p-3 mb-0">Profile</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Settings</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-logout text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Log out</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">Advanced settings</p>
-              </div>
-            </li>
-          </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-            data-toggle="offcanvas">
-            <span class="mdi mdi-format-line-spacing"></span>
-          </button>
-        </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="worldwild.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">General Data</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="carbon.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">CO2 Increase</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="population.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title"> Population Increase</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
-            <div class="col-12 grid-margin stretch-card">
-            </div>
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html"
+              ><img src="assets/images/logo-mini.svg" alt="logo"
+            /></a>
           </div>
-
-          <div class="row">
-            <div class="col-md-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Carbon Dioxide Emission Levels</h4>
-       <!-- Styles -->
-<style>
-#chartdivv {
-  width: 100%;
-  height: 200px;
-}
-</style>
-
-<!-- Resources -->
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
-<!-- Chart code -->
-<script>
-am5.ready(function() {
-
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdivv");
-
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
-
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-var chart = root.container.children.push(
-  am5percent.PieChart.new(root, {
-    startAngle: 160, endAngle: 380
-  })
-);
-
-// Create series
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-
-var series0 = chart.series.push(
-  am5percent.PieSeries.new(root, {
-    valueField: "litres",
-    categoryField: "country",
-    startAngle: 160,
-    endAngle: 380,
-    radius: am5.percent(70),
-    innerRadius: am5.percent(65)
-  })
-);
-
-var colorSet = am5.ColorSet.new(root, {
-  colors: [series0.get("colors").getIndex(0)],
-  passOptions: {
-    lightness: -0.05,
-    hue: 0
-  }
-});
-
-series0.set("colors", colorSet);
-
-series0.ticks.template.set("forceHidden", true);
-series0.labels.template.set("forceHidden", true);
-
-var series1 = chart.series.push(
-  am5percent.PieSeries.new(root, {
-    startAngle: 160,
-    endAngle: 380,
-    valueField: "bottles",
-    innerRadius: am5.percent(80),
-    categoryField: "country"
-  })
-);
-
-series1.ticks.template.set("forceHidden", true);
-series1.labels.template.set("forceHidden", true);
-
-var label = chart.seriesContainer.children.push(
-  am5.Label.new(root, {
-    textAlign: "center",
-    centerY: am5.p100,
-    centerX: am5.p50,
-    text: "[fontSize:18px]total[/]:\n[bold fontSize:30px]415mg/L[/]"
-  })
-);
-
-var data = [
-  {
-    country: "United States",
-    litres: 501.9,
-    bottles: 1500
-  },
-  {
-    country: "China",
-    litres: 301.9,
-    bottles: 990
-  },
-  {
-    country: "Europe",
-    litres: 201.1,
-    bottles: 785
-  },
-  {
-    country: "Germany",
-    litres: 165.8,
-    bottles: 255
-  },
-  {
-    country: "Australia",
-    litres: 139.9,
-    bottles: 452
-  },
-  {
-    country: "Austria",
-    litres: 128.3,
-    bottles: 332
-  },
-  {
-    country: "UK",
-    litres: 99,
-    bottles: 150
-  },
-  {
-    country: "Belgium",
-    litres: 60,
-    bottles: 178
-  },
-  {
-    country: "The Netherlands",
-    litres: 50,
-    bottles: 50
-  }
-];
-
-// Set data
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-series0.data.setAll(data);
-series1.data.setAll(data);
-
-}); // end am5.ready()
-</script>
-
-<!-- HTML -->
-<div id="chartdivv"></div>
-                  <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                    <div class="text-md-center text-xl-left">
-                      <h6 class="mb-1">China</h6>
-                      <p class="text-muted mb-0">01 Out 2022, 09:12AM</p>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-toggle="minimize"
+            >
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search products"
+                  />
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="createbuttonDropdown"
+                >
+                  <h6 class="p-3 mb-0">Projects</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-outline text-primary"></i>
+                      </div>
                     </div>
-                    <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                      <h6 class="font-weight-bold mb-0">30,6%</h6>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Software Development
+                      </p>
                     </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-web text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        UI Development
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-layers text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Software Testing
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+              </li>
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a
+                  class="nav-link count-indicator dropdown-toggle"
+                  id="messageDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="mdi mdi-email"></i>
+                  <span class="count bg-success"></span>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="messageDropdown"
+                >
+                  <h6 class="p-3 mb-0">Messages</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img
+                        src="assets/images/faces/face4.jpg"
+                        alt="image"
+                        class="rounded-circle profile-pic"
+                      />
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Mark send you a message
+                      </p>
+                      <p class="text-muted mb-0">1 Minutes ago</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img
+                        src="assets/images/faces/face2.jpg"
+                        alt="image"
+                        class="rounded-circle profile-pic"
+                      />
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Cregh send you a message
+                      </p>
+                      <p class="text-muted mb-0">15 Minutes ago</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img
+                        src="assets/images/faces/face3.jpg"
+                        alt="image"
+                        class="rounded-circle profile-pic"
+                      />
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Profile picture updated
+                      </p>
+                      <p class="text-muted mb-0">18 Minutes ago</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">4 new messages</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a
+                  class="nav-link count-indicator dropdown-toggle"
+                  id="notificationDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="notificationDropdown"
+                >
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Event today</p>
+                      <p class="text-muted ellipsis mb-0">
+                        Just a reminder that you have an event today
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="text-muted ellipsis mb-0">Update dashboard</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Launch Admin</p>
+                      <p class="text-muted ellipsis mb-0">New admin wow!</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="profileDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <div class="navbar-profile">
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
-                  <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                    <div class="text-md-center text-xl-left">
-                      <h6 class="mb-1">United States</h6>
-                      <p class="text-muted mb-0">01 Out 2022, 09:12AM</p>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="profileDropdown"
+                >
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
                     </div>
-                    <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                      <h6 class="font-weight-bold mb-0">13,5%</h6>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Carbon Dioxide Emission Levels</h4>
+                    <!-- Styles -->
+                    <style>
+                      #chartdivv {
+                        width: 100%;
+                        height: 200px;
+                      }
+                    </style>
+
+                    <!-- Resources -->
+                    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
+
+                    <!-- Chart code -->
+                    <script>
+                      am5.ready(function () {
+                        // Create root element
+                        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+                        var root = am5.Root.new("chartdivv");
+
+                        // Set themes
+                        // https://www.amcharts.com/docs/v5/concepts/themes/
+                        root.setThemes([am5themes_Dark.new(root)]);
+
+                        // Create chart
+                        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+                        var chart = root.container.children.push(
+                          am5percent.PieChart.new(root, {
+                            startAngle: 160,
+                            endAngle: 380,
+                          })
+                        );
+
+                        // Create series
+                        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+
+                        var series0 = chart.series.push(
+                          am5percent.PieSeries.new(root, {
+                            valueField: "litres",
+                            categoryField: "country",
+                            startAngle: 160,
+                            endAngle: 380,
+                            radius: am5.percent(70),
+                            innerRadius: am5.percent(65),
+                          })
+                        );
+
+                        var colorSet = am5.ColorSet.new(root, {
+                          colors: [series0.get("colors").getIndex(0)],
+                          passOptions: {
+                            lightness: -0.05,
+                            hue: 0,
+                          },
+                        });
+
+                        series0.set("colors", colorSet);
+
+                        series0.ticks.template.set("forceHidden", true);
+                        series0.labels.template.set("forceHidden", true);
+
+                        var series1 = chart.series.push(
+                          am5percent.PieSeries.new(root, {
+                            startAngle: 160,
+                            endAngle: 380,
+                            valueField: "bottles",
+                            innerRadius: am5.percent(80),
+                            categoryField: "country",
+                          })
+                        );
+
+                        series1.ticks.template.set("forceHidden", true);
+                        series1.labels.template.set("forceHidden", true);
+
+                        var label = chart.seriesContainer.children.push(
+                          am5.Label.new(root, {
+                            textAlign: "center",
+                            centerY: am5.p100,
+                            centerX: am5.p50,
+                            text: "[fontSize:18px]total[/]:\n[bold fontSize:30px]415mg/L[/]",
+                          })
+                        );
+
+                        var data = [
+                          {
+                            country: "United States",
+                            litres: 501.9,
+                            bottles: 1500,
+                          },
+                          {
+                            country: "China",
+                            litres: 301.9,
+                            bottles: 990,
+                          },
+                          {
+                            country: "Europe",
+                            litres: 201.1,
+                            bottles: 785,
+                          },
+                          {
+                            country: "Germany",
+                            litres: 165.8,
+                            bottles: 255,
+                          },
+                          {
+                            country: "Australia",
+                            litres: 139.9,
+                            bottles: 452,
+                          },
+                          {
+                            country: "Austria",
+                            litres: 128.3,
+                            bottles: 332,
+                          },
+                          {
+                            country: "UK",
+                            litres: 99,
+                            bottles: 150,
+                          },
+                          {
+                            country: "Belgium",
+                            litres: 60,
+                            bottles: 178,
+                          },
+                          {
+                            country: "The Netherlands",
+                            litres: 50,
+                            bottles: 50,
+                          },
+                        ];
+
+                        // Set data
+                        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+                        series0.data.setAll(data);
+                        series1.data.setAll(data);
+                      }); // end am5.ready()
+                    </script>
+
+                    <!-- HTML -->
+                    <div id="chartdivv"></div>
+                    <div
+                      class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3"
+                    >
+                      <div class="text-md-center text-xl-left">
+                        <h6 class="mb-1">Germany</h6>
+                        <p class="text-muted mb-0">01 Out 2022, 09:12AM</p>
+                      </div>
+                      <div
+                        class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0"
+                      >
+                        <h6 class="font-weight-bold mb-0">5,5%</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3"
+                    >
+                      <div class="text-md-center text-xl-left">
+                        <h6 class="mb-1">United States</h6>
+                        <p class="text-muted mb-0">01 Out 2022, 09:12AM</p>
+                      </div>
+                      <div
+                        class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0"
+                      >
+                        <h6 class="font-weight-bold mb-0">24,6%</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-8 grid-margin stretch-card">
-              <div class="card">
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <script src="test.js"></script>
+                  <div>
+                    <!-- Styles -->
+                    <style>
+                      body {
+                        background-color: #cfc970;
+                        color: #fff;
+                      }
 
-                <script src="test.js"></script>
-                <div>
-                  <!-- Styles -->
-                  <style>
-                    body {
-                      background-color: #cfc970;
-                      color: #fff;
-                    }
+                      #chartdiv {
+                        width: 100%;
+                        height: 500px;
+                        max-width: 100%;
+                        background-color: #030303;
+                      }
+                    </style>
 
-                    #chartdiv {
-                      width: 100%;
-                      height: 500px;
-                      max-width: 100%;
-                      background-color: #030303;
-                    }
-                  </style>
+                    <!-- Resources -->
+                    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
 
-                  <!-- Resources -->
-                  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-                  <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+                    <!-- Chart code -->
+                    <script>
+                      am4core.ready(function () {
+                        // Themes begin
+                        am4core.useTheme(am4themes_dark);
+                        // Themes end
 
-                  <!-- Chart code -->
-                  <script>
-                    am4core.ready(function () {
+                        var chart = am4core.create(
+                          "chartdiv",
+                          am4maps.MapChart
+                        );
 
-                      // Themes begin
-                      am4core.useTheme(am4themes_dark);
-                      // Themes end
+                        // Set map definition
+                        chart.geodata = am4geodata_worldLow;
 
-                      var chart = am4core.create("chartdiv", am4maps.MapChart);
+                        // Set projection
+                        chart.projection =
+                          new am4maps.projections.Orthographic();
+                        chart.panBehavior = "rotateLongLat";
+                        chart.deltaLatitude = -20;
+                        chart.padding(20, 20, 20, 20);
 
-                      // Set map definition
-                      chart.geodata = am4geodata_worldLow;
+                        // limits vertical rotation
+                        chart.adapter.add(
+                          "deltaLatitude",
+                          function (delatLatitude) {
+                            return am4core.math.fitToRange(
+                              delatLatitude,
+                              -90,
+                              90
+                            );
+                          }
+                        );
 
-                      // Set projection
-                      chart.projection = new am4maps.projections.Orthographic();
-                      chart.panBehavior = "rotateLongLat";
-                      chart.deltaLatitude = -20;
-                      chart.padding(20, 20, 20, 20);
+                        // Create map polygon series
+                        var polygonSeries = chart.series.push(
+                          new am4maps.MapPolygonSeries()
+                        );
 
-                      // limits vertical rotation
-                      chart.adapter.add("deltaLatitude", function (delatLatitude) {
-                        return am4core.math.fitToRange(delatLatitude, -90, 90);
-                      })
+                        // Make map load polygon (like country names) data from GeoJSON
+                        polygonSeries.useGeodata = true;
 
-                      // Create map polygon series
-                      var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+                        // Configure series
+                        var polygonTemplate =
+                          polygonSeries.mapPolygons.template;
+                        polygonTemplate.tooltipText = "{name}";
+                        polygonTemplate.fill = am4core.color("#47c78a");
+                        polygonTemplate.stroke = am4core.color("#454a58");
+                        polygonTemplate.strokeWidth = 0.5;
 
-                      // Make map load polygon (like country names) data from GeoJSON
-                      polygonSeries.useGeodata = true;
+                        var graticuleSeries = chart.series.push(
+                          new am4maps.GraticuleSeries()
+                        );
+                        graticuleSeries.mapLines.template.line.stroke =
+                          am4core.color("#ffffff");
+                        graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
+                        graticuleSeries.fitExtent = false;
 
-                      // Configure series
-                      var polygonTemplate = polygonSeries.mapPolygons.template;
-                      polygonTemplate.tooltipText = "{name}";
-                      polygonTemplate.fill = am4core.color("#47c78a");
-                      polygonTemplate.stroke = am4core.color("#454a58");
-                      polygonTemplate.strokeWidth = 0.5;
+                        chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
+                        chart.backgroundSeries.mapPolygons.template.polygon.fill =
+                          am4core.color("#ffffff");
 
-                      var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
-                      graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
-                      graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
-                      graticuleSeries.fitExtent = false;
+                        // Create hover state and set alternative fill color
+                        var hs = polygonTemplate.states.create("hover");
+                        hs.properties.fill = chart.colors
+                          .getIndex(0)
+                          .brighten(-0.5);
 
+                        let animation;
+                        setTimeout(function () {
+                          animation = chart.animate(
+                            { property: "deltaLongitude", to: 100000 },
+                            20000000
+                          );
+                        }, 3000);
 
-                      chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
-                      chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+                        chart.seriesContainer.events.on("down", function () {
+                          if (animation) {
+                            animation.stop();
+                          }
+                        });
+                      }); // end am4core.ready()
+                    </script>
 
-                      // Create hover state and set alternative fill color
-                      var hs = polygonTemplate.states.create("hover");
-                      hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
-
-                      let animation;
-                      setTimeout(function () {
-                        animation = chart.animate({property: "deltaLongitude", to: 100000}, 20000000);
-                      }, 3000)
-
-                      chart.seriesContainer.events.on("down", function () {
-                        if (animation) {
-                          animation.stop();
-                        }
-                      })
-
-                    }); // end am4core.ready()
-                  </script>
-
-                  <!-- HTML -->
-                  <div id="chartdiv"></div>
+                    <!-- HTML -->
+                    <div id="chartdiv"></div>
+                  </div>
                 </div>
-
-
-
-
-
-
-
-
-
               </div>
             </div>
-          </div>
-                   <!-- <div class="row">
+            <!-- <div class="row">
             <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -704,32 +810,36 @@ series1.data.setAll(data);
               </div>
             </div>
           </div> -->
-          <div class="row">
-              <h2 class="text-muted font-weight-normal">Potential Growth of Atmospheric  CO2 Contamination</h2>
-              <div class="col-12 grid-margin stretch-card">
-              </div>
+            <div class="row">
+              <h2 class="text-muted font-weight-normal">
+                Potential Growth of Atmospheric CO2 Contamination
+              </h2>
+              <div class="col-12 grid-margin stretch-card"></div>
             </div>
-          <div class="row">
+            <div class="row">
               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                       
                       <div class="col-9">
-                       
                         <div class="d-flex align-items-center align-self-start">
-                          
                           <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="text-success ml-2 mb-0 font-weight-medium">
+                            +3.5%
+                          </p>
                         </div>
                       </div>
                       <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
+                        <div class="icon icon-box-success">
+                          <span
+                            class="mdi mdi-arrow-top-right icon-item"
+                          ></span>
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Last 12 months</h6>
+                    <h6 class="text-muted font-weight-normal">
+                      Last 12 months
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -737,18 +847,19 @@ series1.data.setAll(data);
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                   
                       <div class="col-9">
-                       
                         <div class="d-flex align-items-center align-self-start">
-                          
                           <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="text-success ml-2 mb-0 font-weight-medium">
+                            +3.5%
+                          </p>
                         </div>
                       </div>
                       <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
+                        <div class="icon icon-box-success">
+                          <span
+                            class="mdi mdi-arrow-top-right icon-item"
+                          ></span>
                         </div>
                       </div>
                     </div>
@@ -760,16 +871,19 @@ series1.data.setAll(data);
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">400mg/L</h3>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                          <p class="text-danger ml-2 mb-0 font-weight-medium">
+                            -2.4%
+                          </p>
                         </div>
                       </div>
                       <div class="col-3">
                         <div class="icon icon-box-danger">
-                          <span class="mdi mdi-arrow-bottom-left icon-item"></span>
+                          <span
+                            class="mdi mdi-arrow-bottom-left icon-item"
+                          ></span>
                         </div>
                       </div>
                     </div>
@@ -781,16 +895,19 @@ series1.data.setAll(data);
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">415mg/L</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="text-success ml-2 mb-0 font-weight-medium">
+                            +3.5%
+                          </p>
                         </div>
                       </div>
                       <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
+                        <div class="icon icon-box-success">
+                          <span
+                            class="mdi mdi-arrow-top-right icon-item"
+                          ></span>
                         </div>
                       </div>
                     </div>
@@ -799,261 +916,210 @@ series1.data.setAll(data);
                 </div>
               </div>
             </div>
-          <div class="row">
-            <div class="col-sm-4 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h5>Sea Level Rise</h5>
-                  <div class="row">
-                    <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                      <div class="d-flex d-sm-block d-md-flex align-items-center">
-                        <h2 class="mb-0">2 meters</h2>
-                        <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
-                      </div>
-                      <h6 class="text-muted font-weight-normal">11.38% Since last month</h6>
-                    </div>
-                    <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                      <i class="icon-lg mdi mdi-codepen text-primary ml-auto"></i>
-                    </div>
-                  </div>
-                </div>
+          
+            <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card"></div>
               </div>
             </div>
-            <div class="col-sm-4 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h5>Dioxide Carbon</h5>
-                  <div class="row">
-                    <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                      <div class="d-flex d-sm-block d-md-flex align-items-center">
-                        <h2 class="mb-0">415mg/L</h2>
-                        <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
-                      </div>
-                      <h6 class="text-muted font-weight-normal"> 9.61% Since last month</h6>
-                    </div>
-                    <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                      <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h5>Recent Monitoring Date</h5>
-                  <div class="row">
-                    <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                      <div class="d-flex d-sm-block d-md-flex align-items-center">
-                        <h2 class="mb-0">02/10/2022</h2>
-                        
-                      </div>
-                      
-                    </div>
-                    <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                      <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                    <div class="row ">
-            <div class="col-12 grid-margin">
-              <div class="card">
 
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Relationship Between CO2 in dg/L and World Population Growth in Billions Of Habitants</h4>
-                  <div class="row">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Relationship Between CO2 in dg/L and World Population
+                      Growth in Billions Of Habitants
+                    </h4>
+                    <div class="row">
                       <html>
-  <head>
-    <meta charset="utf-8"/>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {packages:['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+                        <head>
+                          <meta charset="utf-8" />
+                          <script
+                            type="text/javascript"
+                            src="https://www.gstatic.com/charts/loader.js"
+                          ></script>
+                          <script type="text/javascript">
+                            google.charts.load("current", {
+                              packages: ["corechart"],
+                            });
+                            google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['X', 'Y', 'Z'],
-          [0, 4, 5],
-          [1, 2, 6],
-          [2, 4, 8],
-          [3, 6, 10],
-          [4, 4, 11],
-          [5, 8, 13],
-          [6, 12, 15],
-          [7, 15, 19],
-          [8, 25, 21],
-          [9, 34, 23],
-          [10, 50, 27]
-        ]);
+                            function drawChart() {
+                              var data = google.visualization.arrayToDataTable([
+                                ["X", "Y", "Z"],
+                                [0, 4, 5],
+                                [1, 2, 6],
+                                [2, 4, 8],
+                                [3, 6, 10],
+                                [4, 4, 11],
+                                [5, 8, 13],
+                                [6, 12, 15],
+                                [7, 15, 19],
+                                [8, 25, 21],
+                                [9, 34, 23],
+                                [10, 50, 27],
+                              ]);
 
-        var options = {
-          height: 400,
-          width: 1010,
-          legend: 'none',
-          colors: ['#9575cd', '#33ac71'],
-          pointShape: 'diamond',
-          trendlines: {
-            0: {
-              type: 'exponential',
-              pointSize: 20,
-              opacity: 0.6,
-              pointsVisible: false
-            },
-            1: {
-              type: 'linear',
-              pointSize: 10,
-              pointsVisible: true
-            }
-          }
-        };
+                              var options = {
+                                height: 400,
+                                width: 1010,
+                                legend: "none",
+                                colors: ["#9575cd", "#33ac71"],
+                                pointShape: "diamond",
+                                trendlines: {
+                                  0: {
+                                    type: "exponential",
+                                    pointSize: 20,
+                                    opacity: 0.6,
+                                    pointsVisible: false,
+                                  },
+                                  1: {
+                                    type: "linear",
+                                    pointSize: 10,
+                                    pointsVisible: true,
+                                  },
+                                },
+                              };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+                              var chart = new google.visualization.ScatterChart(
+                                document.getElementById("chart_div")
+                              );
 
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-    <div id="chart_div" ></div>
-  </body>
-</html>
-
-    
-
+                              chart.draw(data, options);
+                            }
+                          </script>
+                        </head>
+                        <body>
+                          <div id="chart_div"></div>
+                        </body>
+                      </html>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row ">
-            <div class="col-12 grid-margin">
-              <div class="card">
-
+            <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card"></div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Relationship Between CO2 and World Population Growth</h4>
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="table-responsive">
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-us"></i>
-                              </td>
-                              <td>USA</td>
-                              <td class="text-right"> 332.915.000 </td>
-                              <td class="text-right font-weight-medium"> 56.35% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-de"></i>
-                              </td>
-                              <td>Germany</td>
-                              <td class="text-right"> 83.900.000 </td>
-                              <td class="text-right font-weight-medium"> 33.25% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-au"></i>
-                              </td>
-                              <td>Australia</td>
-                              <td class="text-right"> 25.788.000 </td>
-                              <td class="text-right font-weight-medium"> 15.45% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-gb"></i>
-                              </td>
-                              <td>United Kingdom</td>
-                              <td class="text-right"> 55.980.000 </td>
-                              <td class="text-right font-weight-medium"> 25.00% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-ro"></i>
-                              </td>
-                              <td>Romania</td>
-                              <td class="text-right"> 19.128.000 </td>
-                              <td class="text-right font-weight-medium"> 10.25% </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <i class="flag-icon flag-icon-br"></i>
-                              </td>
-                              <td>Brasil</td>
-                              <td class="text-right"> 213.993.000 </td>
-                              <td class="text-right font-weight-medium"> 15.00% </td>
-                            </tr>
-                          </tbody>
-                        </table>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Relationship Between CO2 and World Population Growth
+                    </h4>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <i class="flag-icon flag-icon-de"></i>
+                                </td>
+                                <td>Germany</td>
+                                <td class="text-right">83.900.000</td>
+                                <td class="text-right font-weight-medium">
+                                  33.25%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <i class="flag-icon flag-icon-au"></i>
+                                </td>
+                                <td>Australia</td>
+                                <td class="text-right">25.788.000</td>
+                                <td class="text-right font-weight-medium">
+                                  15.45%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <i class="flag-icon flag-icon-gb"></i>
+                                </td>
+                                <td>United Kingdom</td>
+                                <td class="text-right">55.980.000</td>
+                                <td class="text-right font-weight-medium">
+                                  25.00%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <i class="flag-icon flag-icon-br"></i>
+                                </td>
+                                <td>Brasil</td>
+                                <td class="text-right">213.993.000</td>
+                                <td class="text-right font-weight-medium">
+                                  15.00%
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-md-7">
+                        <div id="audience-map" class="vector-map"></div>
                       </div>
                     </div>
-                    <div class="col-md-7">
-                      <div id="audience-map" class="vector-map"></div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                >Copyright © HACKERS do Espaço 2022</span
+              >
+              <span
+                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+              >
+                Free
+                <a
+                  href="https://www.bootstrapdash.com/bootstrap-admin-template/"
+                  target="_blank"
+                  >NASA data Science</a
+                >
+                from HACKERS do Espaço
+              </span>
+            </div>
+          </footer>
+          <!-- partial -->
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © HACKERS do Espaço
-              2022</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
-                href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">NASA data Science</a>
-              from HACKERS do Espaço </span>
-          </div>
-        </footer>
-        <!-- partial -->
+        <!-- main-panel ends -->
       </div>
-      <!-- main-panel ends -->
+      <!-- page-body-wrapper ends -->
     </div>
-    <!-- page-body-wrapper ends -->
-  </div>
 
-  <!-- container-scroller -->
-  <!-- plugins:js -->
-  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="assets/vendors/chart.js/Chart.min.js"></script>
-  <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
-  <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-  <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-  <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="assets/js/off-canvas.js"></script>
-  <script src="assets/js/hoverable-collapse.js"></script>
-  <script src="assets/js/misc.js"></script>
-  <script src="assets/js/settings.js"></script>
-  <script src="assets/js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page -->
-  <script src="assets/js/dashboard.js"></script>
-  <!-- End custom js for this page -->
-
-</body>
-
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
 </html>
